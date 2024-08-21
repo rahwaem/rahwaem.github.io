@@ -56,17 +56,24 @@
             line-height: 1.5;
         }
 
-        .video-row {
+        .image-display {
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            align-items: center;
+            width: 200%;
+            overflow-x: auto;
         }
 
-        .video-row video {
-            width: 1200px;
-            height: 675px;
+        .image-display img {
+            width: 2000px;
+            height: 400px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-display img:hover {
+            transform: scale(1.1);
         }
 
         .footer {
@@ -96,16 +103,11 @@
         <div class="about-me">
             <p>I am a passionate junior architect with a keen eye for detail and a commitment to innovative design. My goal is to create spaces that inspire and endure. With a background in architecture and hands-on experience, I am excited to contribute to meaningful projects.</p>
         </div>
-        <div class="video-row">
-            <video autoplay muted loop>
-                <source src="assets/images/11.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+        <div class="image-display">
+            <video width="1200" height="675" autoplay muted loop>
+            <source src="assets/images/11.mp4" type="video/mp4">
+            Your browser does not support the video tag.
             </video>
-            <video autoplay muted loop>
-                <source src="assets/videos/Ad Rahwa Ephremre.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <!-- Add more videos as needed -->
         </div>
         <div class="footer">
             <a href="https://www.linkedin.com/in/rahwa-ephrem-92571986" target="_blank" class="button">Hire Me | Connect</a>
