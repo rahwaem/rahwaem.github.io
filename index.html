@@ -20,11 +20,11 @@
             background-color: black;
             color: hotpink;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .container {
@@ -33,7 +33,6 @@
             align-items: center;
             padding: 20px;
             max-width: 100%;
-            overflow: hidden;
         }
 
         .header {
@@ -51,8 +50,6 @@
             margin-top: 20px;
             max-width: 60%;
             text-align: center;
-            z-index: 10;
-            background-color: black;
         }
 
         .about-me p {
@@ -66,20 +63,13 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
+            overflow: hidden; /* Hide any overflow */
         }
 
         .image-display video {
-            width: 100%;
+            max-width: 100%;
             height: auto;
-            max-width: 2000px;
             margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-display img:hover {
-            transform: scale(1.1);
         }
 
         .footer {
