@@ -100,9 +100,9 @@
             <p>I am a passionate junior architect with a keen eye for detail and a commitment to innovative design. My goal is to create spaces that inspire and endure. With a background in architecture and hands-on experience, I am excited to contribute to meaningful projects.</p>
         </div>
         <div class="image-display">
-            <video width="2000" height="500" autoplay muted loop>
-            <source src="assets/videos/2000X500_compressed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <video id="myVideo" width="2000" height="500" autoplay muted loop>
+                <source src="assets/videos/2000X500_compressed.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </div>
         <div class="footer">
@@ -110,5 +110,10 @@
             <a href="https://www.instagram.com/rahwa.ephrem" target="_blank" class="button">Instagram</a>
         </div>
     </div>
+    <script>
+        document.getElementById('myVideo').addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Prevents the context menu from appearing
+        });
+    </script>
 </body>
 </html>
